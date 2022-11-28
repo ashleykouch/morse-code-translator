@@ -11,16 +11,19 @@
       href="https://fonts.googleapis.com/css2?family=Exo&display=swap"
       rel="stylesheet"
     />
+    <script src="./script.js" defer></script>
     <title>Morse Code Translator</title>
   </head>
   <body>
     <header id="header" class="header">
       <h1 id="title" class="header__title">Morse Code Translator</h1>
-      <h2 id="subheader" class="header__subheader">Translate in real time!</h2>
+      <!-- <h2 id="subheader" class="header__subheader">Translate in real time!</h2> -->
     </header>
 
     <div id="darkModeBtn" class="dark-mode__btn">
-      <button id="btn" class="btn">Display Mode</button>
+      <button onclick="textToMorseCode()" id="btn" class="btn">
+        Display Mode
+      </button>
     </div>
 
     <div id="container" class="container">
