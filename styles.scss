@@ -23,15 +23,9 @@
   }
 }
 
-.dark-mode {
-  &__btn {
-    text-align: center;
-    margin-bottom: 80px;
-
-    &--colourMode {
-      background-color: rgb(37, 37, 90);
-    }
-  }
+.btn {
+  text-align: center;
+  margin: 0 50px;
 }
 
 .container {
@@ -41,13 +35,15 @@
 
   &__text {
     text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 
-  &__img {
-    width: 50px;
-    height: 50px;
-    margin: 0 50px;
-  }
+  // &__img {
+  //   width: 50px;
+  //   height: 50px;
+  //   margin: 0 50px;
+  // }
 
   &__input {
     overflow-y: scroll;

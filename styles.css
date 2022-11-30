@@ -17,12 +17,9 @@
   color: whitesmoke;
 }
 
-.dark-mode__btn {
+.btn {
   text-align: center;
-  margin-bottom: 80px;
-}
-.dark-mode__btn--colourMode {
-  background-color: rgb(37, 37, 90);
+  margin: 0 50px;
 }
 
 .container {
@@ -32,11 +29,8 @@
 }
 .container__text {
   text-align: center;
-}
-.container__img {
-  width: 50px;
-  height: 50px;
-  margin: 0 50px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .container__input {
   overflow-y: scroll;

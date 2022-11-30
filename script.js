@@ -121,3 +121,20 @@ const convertToLatin = (string) => {
 };
 
 console.log(convertToLatin("... --- ... / ... --- ..."));
+
+const button = document.getElementById("btn");
+
+const input = document.getElementById("input");
+console.log(input.value);
+
+const output = document.getElementById("output");
+
+// button.addEventListener("click", () => {
+input.addEventListener("input", function handleChange(event) {
+  output.innerText = event.target.value;
+});
+// });
+
+// message.addEventListener("input", function handleChange(event) {
+//   console.log(event.target.value);
+// });
