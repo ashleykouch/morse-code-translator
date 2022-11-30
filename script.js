@@ -77,7 +77,8 @@ const latinToMorseCode = {
 //   - might throw error if it is not in english
 // - split string
 
-// - have a function that takes in a string in english
+// have a function that takes in a string in latin and translates to more code
+
 const convertToMorseCode = (string) => {
   return (
     string
@@ -97,3 +98,26 @@ const convertToMorseCode = (string) => {
 };
 
 console.log(convertToMorseCode("SOS SOS"));
+
+let morseCodeToLatin = {};
+
+morseCodeToLatin = Object.entries(latinToMorseCode).reduce((acc, curr) => {
+  acc[curr[1]] = curr[0];
+  return acc;
+}, {});
+
+// console.log(morseCodeToLatin);
+
+// have a function that takes in a string in morse code and translates to latin
+
+const convertToLatin = (string) => {
+  return string
+    .toUpperCase()
+    .split(" ")
+    .map((element) => {
+      return morseCodeToLatin[element] ? morseCodeToLatin[element] : [element];
+    })
+    .join("");
+};
+
+console.log(convertToLatin("... --- ... / ... --- ..."));
