@@ -17,12 +17,19 @@
   <body>
     <header id="header" class="header">
       <h1 id="title" class="header__title">Morse Code Translator</h1>
-      <!-- <h2 id="subheader" class="header__subheader">Translate in real time!</h2> -->
+      <h2 id="subheader" class="header__subheader">Translate in real time!</h2>
     </header>
+
+    <section class="info">
+      <p>
+        Simply type either english characters or morse code in the respective
+        boxes and watch it translate!
+      </p>
+    </section>
 
     <div id="container" class="container">
       <div id="textContainer" class="container__text">
-        <h3>Text</h3>
+        <h3 class="container__title">Text</h3>
         <textarea
           id="text"
           class="container__input"
@@ -39,7 +46,7 @@
       />
 
       <div id="morseCodeContainer" class="container__text">
-        <h3>Morse Code</h3>
+        <h3 class="container__title">Morse Code</h3>
         <textarea
           id="morseCode"
           class="container__input"
@@ -48,5 +55,9 @@
         ></textarea>
       </div>
     </div>
+
+    <footer class="footer">
+      <div class="footer__content"></div>
+    </footer>
   </body>
 </html>
