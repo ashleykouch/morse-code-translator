@@ -122,19 +122,33 @@ const convertToLatin = (string) => {
 
 console.log(convertToLatin("... --- ... / ... --- ..."));
 
-const button = document.getElementById("btn");
+// const input = document.getElementById("input");
+// console.log(input.value);
 
-const input = document.getElementById("input");
-console.log(input.value);
+// const output = document.getElementById("output");
 
-const output = document.getElementById("output");
+// // button.addEventListener("click", () => {
+// input.addEventListener("input", function handleChange(event) {
+//   output.innerText = convertToMorseCode(event.target.value);
+// });
 
-// button.addEventListener("click", () => {
-input.addEventListener("input", function handleChange(event) {
-  output.innerText = event.target.value;
-});
+// input.addEventListener("input", function handleChange(event) {
+//   output.innerText = convertToLatin(event.target.value);
 // });
 
 // message.addEventListener("input", function handleChange(event) {
 //   console.log(event.target.value);
 // });
+
+const text = document.getElementById("text");
+const morseCode = document.getElementById("morseCode");
+
+text.addEventListener("input", function toMorseCode(event) {
+  morseCode.value = convertToMorseCode(text.value);
+  console.log(text.value);
+});
+
+morseCode.addEventListener("input", function toLatin(event) {
+  text.value = convertToLatin(morseCode.value);
+  console.log(morseCode.value);
+});

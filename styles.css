@@ -29,8 +29,11 @@
 }
 .container__text {
   text-align: center;
-  margin-left: 40px;
-  margin-right: 40px;
+}
+.container__img {
+  width: 50px;
+  height: 50px;
+  margin: 0 50px;
 }
 .container__input {
   overflow-y: scroll;
