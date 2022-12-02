@@ -1,4 +1,5 @@
-export const characterMapping = {
+// create mapping of characters from latin to morse code
+const latinToMorseCode = {
   // latin to morse code
   A: ".-",
   B: "-...",
@@ -21,6 +22,7 @@ export const characterMapping = {
   S: "...",
   T: "-",
   U: "..-",
+  V: "...-",
   W: ".--",
   X: "-..-",
   Y: "-.--",
