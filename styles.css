@@ -35,7 +35,7 @@
 .container__input {
   overflow-y: scroll;
   resize: none;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .footer__content {
@@ -43,6 +43,27 @@
   width: 100vw;
   height: 80px;
   background: rgb(37, 37, 90);
+}
+.footer__content--info1 {
+  background: rgb(37, 37, 90);
+  color: whitesmoke;
+}
+
+.about__morseCode {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.about__morseCode--img {
+  width: 300px;
+  height: 200px;
+  margin-right: 60px;
+}
+.about__morseCode--text {
+  width: 400px;
+  margin-left: 60px;
 }
 
 * {
