@@ -5,6 +5,12 @@
     height: 80px;
     background: rgb(37, 37, 90);
 
+    padding: 20px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+
     &--info1 {
       background: rgb(37, 37, 90);
       color: whitesmoke;

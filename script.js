@@ -81,9 +81,6 @@ const latinToMorseCode = {
 // have a function that takes in a string in latin and translates to more code
 
 export const convertToMorseCode = (string) => {
-  if (typeof string !== "string") {
-    throw new Error("Invalid parameter type, please return a string");
-  }
   return (
     string
       // convert string to uppercase
@@ -126,15 +123,15 @@ export const convertToLatin = (string) => {
 
 // console.log(convertToLatin("... --- ... / ... --- ..."));
 
-const text = document.getElementById("text");
-const morseCode = document.getElementById("morseCode");
+// const text = document.getElementById("text");
+// const morseCode = document.getElementById("morseCode");
 
-text.addEventListener("input", function toMorseCode() {
-  morseCode.value = convertToMorseCode(text.value);
-  console.log(text.value);
-});
+// text.addEventListener("input", function toMorseCode() {
+//   morseCode.value = convertToMorseCode(text.value);
+//   console.log(text.value);
+// });
 
-morseCode.addEventListener("input", function toLatin() {
-  text.value = convertToLatin(morseCode.value);
-  console.log(morseCode.value);
-});
+// morseCode.addEventListener("input", function toLatin() {
+//   text.value = convertToLatin(morseCode.value);
+//   console.log(morseCode.value);
+// });

@@ -1,5 +1,5 @@
 .about {
-  &__morseCode {
+  &__morse-code {
     margin-top: 50px;
 
     display: flex;
@@ -13,9 +13,18 @@
       margin-right: 60px;
     }
 
-    &--text {
-      width: 400px;
+    &--section {
+      display: flex;
+      flex-direction: column;
       margin-left: 60px;
+
+      &--header {
+        margin-bottom: 25px;
+      }
+
+      &--text {
+        width: 500px;
+      }
     }
   }
 }
