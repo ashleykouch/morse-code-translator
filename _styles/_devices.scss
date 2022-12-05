@@ -1,0 +1,17 @@
+$phone: 1024px;
+$computer: 1025px;
+
+// @content rule
+// -> placeholder for media queries added along the line when wanting to use mixins
+
+@mixin phone {
+  @media only screen and (max-width: $phone) {
+    @content;
+  }
+}
+
+@mixin computer {
+  @media only screen and (min-width: ($computer + 1px)) {
+    @content;
+  }
+}

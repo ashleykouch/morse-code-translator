@@ -5,6 +5,11 @@
   margin-top: 40px;
   margin-bottom: 50px;
 }
+@media only screen and (max-width: 1024px) {
+  .header {
+    justify-content: center;
+  }
+}
 .header__subheader {
   margin-top: 20px;
 }
@@ -15,11 +20,24 @@
   opacity: 0.5;
   font-style: italic;
 }
+@media only screen and (max-width: 1024px) {
+  .info {
+    display: flex;
+    flex-direction: rw;
+  }
+}
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 .container__text {
   text-align: center;
@@ -37,15 +55,24 @@
   resize: none;
   font-size: 15px;
 }
+@media only screen and (max-width: 1024px) {
+  .container__input {
+    width: 300px;
+    height: 200px;
+  }
+}
 
+.footer {
+  display: flex;
+  align-items: flex-end;
+}
 .footer__content {
   margin-top: 120px;
   width: 100vw;
-  height: 80px;
   background: rgb(37, 37, 90);
   padding: 20px;
   display: flex;
-  align-items: flex-end;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 .footer__content--info1 {
@@ -60,6 +87,13 @@
   justify-content: center;
   align-items: center;
 }
+@media only screen and (max-width: 1024px) {
+  .about__morse-code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .about__morse-code--img {
   width: 300px;
   height: 200px;
@@ -70,11 +104,26 @@
   flex-direction: column;
   margin-left: 60px;
 }
+@media only screen and (max-width: 1024px) {
+  .about__morse-code--section {
+    margin-left: 0px;
+  }
+}
 .about__morse-code--section--header {
   margin-bottom: 25px;
 }
+@media only screen and (max-width: 1024px) {
+  .about__morse-code--section--header {
+    margin-top: 50px;
+  }
+}
 .about__morse-code--section--text {
   width: 500px;
+}
+@media only screen and (max-width: 1024px) {
+  .about__morse-code--section--text {
+    width: 300px;
+  }
 }
 
 * {
