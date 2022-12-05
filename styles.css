@@ -1,0 +1,128 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 1024px) {
+  .header {
+    justify-content: center;
+  }
+}
+.header__subheader {
+  margin-top: 20px;
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 30px;
+  opacity: 0.5;
+  font-style: italic;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+.container__text {
+  text-align: center;
+}
+.container__title {
+  margin-bottom: 10px;
+}
+.container__img {
+  width: 50px;
+  height: 50px;
+  margin: 0 50px;
+}
+.container__input {
+  overflow-y: scroll;
+  resize: none;
+  font-size: 15px;
+}
+@media only screen and (max-width: 1024px) {
+  .container__input {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+.footer {
+  display: flex;
+  align-items: flex-end;
+}
+.footer__content {
+  margin-top: 120px;
+  width: 100vw;
+  background: rgb(37, 37, 90);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footer__content--info1 {
+  background: rgb(37, 37, 90);
+  color: whitesmoke;
+}
+
+.about__morse-code {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1024px) {
+  .about__morse-code {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.about__morse-code--img {
+  width: 300px;
+  height: 200px;
+  margin-right: 60px;
+}
+.about__morse-code--section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+}
+@media only screen and (max-width: 1024px) {
+  .about__morse-code--section {
+    margin-left: 0px;
+  }
+}
+.about__morse-code--section--header {
+  margin-bottom: 25px;
+}
+@media only screen and (max-width: 1024px) {
+  .about__morse-code--section--header {
+    margin-top: 50px;
+  }
+}
+.about__morse-code--section--text {
+  width: 500px;
+}
+@media only screen and (max-width: 1024px) {
+  .about__morse-code--section--text {
+    width: 300px;
+  }
+}
+
+* {
+  font-family: "Exo", sans-serif;
+  margin: 0;
+  background-color: whitesmoke;
+  color: rgb(37, 37, 90);
+}

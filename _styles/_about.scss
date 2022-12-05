@@ -1,0 +1,47 @@
+@use "./devices";
+
+.about {
+  &__morse-code {
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: devices.$phone) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &--img {
+      width: 300px;
+      height: 200px;
+      margin-right: 60px;
+    }
+
+    &--section {
+      display: flex;
+      flex-direction: column;
+      margin-left: 60px;
+      @media only screen and (max-width: devices.$phone) {
+        margin-left: 0px;
+      }
+
+      &--header {
+        margin-bottom: 25px;
+        @media only screen and (max-width: devices.$phone) {
+          margin-top: 50px;
+        }
+      }
+
+      &--text {
+        width: 500px;
+        @media only screen and (max-width: devices.$phone) {
+          width: 300px;
+        }
+      }
+    }
+  }
+}

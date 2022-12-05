@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js" type="module" defer></script>
+    <script src="./modules/input.js" type="module" defer></script>
+    <title>Morse Code Translator</title>
+  </head>
+  <body>
+    <header id="header" class="header">
+      <h1 id="title" class="header__title">Morse Code Translator</h1>
+      <h2 id="subheader" class="header__subheader">Translate in real time!</h2>
+    </header>
+
+    <section class="info">
+      <p>
+        Simply type either english characters or morse code in the respective
+        boxes and watch it translate!
+      </p>
+    </section>
+
+    <div id="container" class="container">
+      <div id="textContainer" class="container__text">
+        <h3 class="container__title">English Text</h3>
+        <textarea
+          id="text"
+          class="container__input"
+          rows="15"
+          cols="60"
+        ></textarea>
+      </div>
+
+      <img
+        id="arrows"
+        class="container__img"
+        src="./assets/back-and-forth-arrow.png"
+        alt="back-forth-arrows"
+      />
+
+      <div id="morseCodeContainer" class="container__text">
+        <h3 class="container__title">Morse Code</h3>
+        <textarea
+          id="morseCode"
+          class="container__input"
+          rows="15"
+          cols="60"
+        ></textarea>
+      </div>
+    </div>
+
+    <div class="about__morse-code">
+      <img
+        class="about__morse-code--img"
+        src="./assets/morse-code.png"
+        alt="morseCodeTranslate"
+      />
+      <div class="about__morse-code--section">
+        <h3 class="about__morse-code--section--header">
+          A Little About Morse Code
+        </h3>
+        <p class="about__morse-code--section--text">
+          A method of telecommunication using different signal durations with
+          dots and dashes (or dits and dahs), the codes are transmitted as
+          electrical pulses or visual signals such as flashing lighted.
+          <br />
+          <br />
+          Morse code was a critical form of communication during World War II
+          and was used as an internation standard for sea communication until
+          1999.
+        </p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__content">
+        <p class="footer__content--info1">
+          Designed using HTML, CSS and Javascript
+        </p>
+        <p class="footer__content--info1">@ashleykouch</p>
+      </div>
+    </footer>
+  </body>
+</html>
