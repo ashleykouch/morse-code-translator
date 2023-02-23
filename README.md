@@ -48,7 +48,7 @@ Furthermore, HTML, SCSS, and JavaScript are commonly used technologies for web d
 
 There are no installations or requirements to run the project. As the project has been deployed, it can be accessed straight through the hosting link.
 
-However, if the portfolio is downloaded, simply open the 'index.html' file in any preferred web browser to view.
+However, if the project is downloaded, simply open the 'index.html' file in any preferred web browser to view.
 
 ---
 
@@ -75,7 +75,7 @@ However, if the portfolio is downloaded, simply open the 'index.html' file in an
 
 ## Known issues
 
-N/A
+- Styling on mobile view is not fully responsive.
 
 ---
 
